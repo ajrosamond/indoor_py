@@ -20,7 +20,7 @@ For example in windows...
 export WEBOTS_HOME=/mnt/c/Program\ Files/Webots
 </pre>
 
-2. Fork your own repository of f23_robotics (using web interface)
+2. Fork your own repository of indoor_py (using web interface)
 
 3. Clone your fork
 <pre>
@@ -29,7 +29,7 @@ git clone <your github url for this repository>
 
 4. Make the package (for python, it really just installs the files
 <pre>
-cd f24_robotics
+cd indoor_py
 colcon build
 </pre>
 
@@ -40,10 +40,10 @@ source install/setup.bash
 
 6. Start webots simulation with connect back to ROS in the virtual machine
 <pre>
-ros2 launch webots_ros2_homework1_python f23_robotics_1_launch.py
+ros2 launch indoor_py indoor_launch.py
 </pre>
-### RUN SAMPLE CONTROLLER
+### RUN CONTROLLER
 
 <pre>
-ros2 run webots_ros2_homework1_python webots_ros2_homework1_python
+ros2 run indoor_py my_robot_driver
 </pre>
