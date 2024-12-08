@@ -1,0 +1,26 @@
+running egg_info
+writing build/indoor_py/indoor_py.egg-info/PKG-INFO
+writing dependency_links to build/indoor_py/indoor_py.egg-info/dependency_links.txt
+writing entry points to build/indoor_py/indoor_py.egg-info/entry_points.txt
+writing requirements to build/indoor_py/indoor_py.egg-info/requires.txt
+writing top-level names to build/indoor_py/indoor_py.egg-info/top_level.txt
+reading manifest file 'build/indoor_py/indoor_py.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file 'build/indoor_py/indoor_py.egg-info/SOURCES.txt'
+running build
+running build_py
+copying indoor_py/my_robot_driver.py -> /root/indoor_py/build/indoor_py/build/lib/indoor_py
+copying indoor_py/orig.py -> /root/indoor_py/build/indoor_py/build/lib/indoor_py
+running install
+running install_lib
+copying /root/indoor_py/build/indoor_py/build/lib/indoor_py/my_robot_driver.py -> /root/indoor_py/install/indoor_py/lib/python3.10/site-packages/indoor_py
+copying /root/indoor_py/build/indoor_py/build/lib/indoor_py/orig.py -> /root/indoor_py/install/indoor_py/lib/python3.10/site-packages/indoor_py
+byte-compiling /root/indoor_py/install/indoor_py/lib/python3.10/site-packages/indoor_py/my_robot_driver.py to my_robot_driver.cpython-310.pyc
+byte-compiling /root/indoor_py/install/indoor_py/lib/python3.10/site-packages/indoor_py/orig.py to orig.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/root/indoor_py/install/indoor_py/lib/python3.10/site-packages/indoor_py-0.0.0-py3.10.egg-info' (and everything under it)
+Copying build/indoor_py/indoor_py.egg-info to /root/indoor_py/install/indoor_py/lib/python3.10/site-packages/indoor_py-0.0.0-py3.10.egg-info
+running install_scripts
+Installing my_robot_driver script to /root/indoor_py/install/indoor_py/lib/indoor_py
+writing list of installed files to '/root/indoor_py/build/indoor_py/install.log'

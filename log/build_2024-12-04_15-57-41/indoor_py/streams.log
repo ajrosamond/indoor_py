@@ -1,0 +1,22 @@
+[1.160s] Invoking command in '/root/indoor_py': PYTHONPATH=/root/indoor_py/build/indoor_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/indoor_py/install/indoor_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base build/indoor_py build --build-base /root/indoor_py/build/indoor_py/build install --record /root/indoor_py/build/indoor_py/install.log --single-version-externally-managed install_data
+[1.643s] running egg_info
+[1.647s] writing build/indoor_py/indoor_py.egg-info/PKG-INFO
+[1.650s] writing dependency_links to build/indoor_py/indoor_py.egg-info/dependency_links.txt
+[1.651s] writing entry points to build/indoor_py/indoor_py.egg-info/entry_points.txt
+[1.651s] writing requirements to build/indoor_py/indoor_py.egg-info/requires.txt
+[1.653s] writing top-level names to build/indoor_py/indoor_py.egg-info/top_level.txt
+[1.664s] reading manifest file 'build/indoor_py/indoor_py.egg-info/SOURCES.txt'
+[1.666s] adding license file 'LICENSE'
+[1.669s] writing manifest file 'build/indoor_py/indoor_py.egg-info/SOURCES.txt'
+[1.670s] running build
+[1.671s] running build_py
+[1.672s] running install
+[1.673s] running install_lib
+[1.683s] running install_data
+[1.685s] running install_egg_info
+[1.697s] removing '/root/indoor_py/install/indoor_py/lib/python3.10/site-packages/indoor_py-0.0.0-py3.10.egg-info' (and everything under it)
+[1.699s] Copying build/indoor_py/indoor_py.egg-info to /root/indoor_py/install/indoor_py/lib/python3.10/site-packages/indoor_py-0.0.0-py3.10.egg-info
+[1.706s] running install_scripts
+[1.797s] Installing my_robot_driver script to /root/indoor_py/install/indoor_py/lib/indoor_py
+[1.797s] writing list of installed files to '/root/indoor_py/build/indoor_py/install.log'
+[1.862s] Invoked command in '/root/indoor_py' returned '0': PYTHONPATH=/root/indoor_py/build/indoor_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/indoor_py/install/indoor_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base build/indoor_py build --build-base /root/indoor_py/build/indoor_py/build install --record /root/indoor_py/build/indoor_py/install.log --single-version-externally-managed install_data

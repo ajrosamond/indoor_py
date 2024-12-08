@@ -1,0 +1,26 @@
+[0.765s] Invoking command in '/root/indoor_py': PYTHONPATH=/root/indoor_py/build/indoor_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/indoor_py/install/indoor_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base build/indoor_py build --build-base /root/indoor_py/build/indoor_py/build install --record /root/indoor_py/build/indoor_py/install.log --single-version-externally-managed install_data
+[0.991s] running egg_info
+[0.991s] writing build/indoor_py/indoor_py.egg-info/PKG-INFO
+[0.992s] writing dependency_links to build/indoor_py/indoor_py.egg-info/dependency_links.txt
+[0.992s] writing entry points to build/indoor_py/indoor_py.egg-info/entry_points.txt
+[0.992s] writing requirements to build/indoor_py/indoor_py.egg-info/requires.txt
+[0.993s] writing top-level names to build/indoor_py/indoor_py.egg-info/top_level.txt
+[0.995s] reading manifest file 'build/indoor_py/indoor_py.egg-info/SOURCES.txt'
+[0.997s] adding license file 'LICENSE'
+[0.997s] writing manifest file 'build/indoor_py/indoor_py.egg-info/SOURCES.txt'
+[0.998s] running build
+[0.998s] running build_py
+[0.998s] copying indoor_py/my_robot_driver.py -> /root/indoor_py/build/indoor_py/build/lib/indoor_py
+[0.999s] running install
+[1.000s] running install_lib
+[1.001s] copying /root/indoor_py/build/indoor_py/build/lib/indoor_py/my_robot_driver.py -> /root/indoor_py/install/indoor_py/lib/python3.10/site-packages/indoor_py
+[1.002s] byte-compiling /root/indoor_py/install/indoor_py/lib/python3.10/site-packages/indoor_py/my_robot_driver.py to my_robot_driver.cpython-310.pyc
+[1.005s] running install_data
+[1.005s] copying worlds/tut.wbt -> /root/indoor_py/install/indoor_py/share/indoor_py/worlds
+[1.007s] running install_egg_info
+[1.008s] removing '/root/indoor_py/install/indoor_py/lib/python3.10/site-packages/indoor_py-0.0.0-py3.10.egg-info' (and everything under it)
+[1.010s] Copying build/indoor_py/indoor_py.egg-info to /root/indoor_py/install/indoor_py/lib/python3.10/site-packages/indoor_py-0.0.0-py3.10.egg-info
+[1.012s] running install_scripts
+[1.031s] Installing my_robot_driver script to /root/indoor_py/install/indoor_py/lib/indoor_py
+[1.031s] writing list of installed files to '/root/indoor_py/build/indoor_py/install.log'
+[1.056s] Invoked command in '/root/indoor_py' returned '0': PYTHONPATH=/root/indoor_py/build/indoor_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/indoor_py/install/indoor_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base build/indoor_py build --build-base /root/indoor_py/build/indoor_py/build install --record /root/indoor_py/build/indoor_py/install.log --single-version-externally-managed install_data
