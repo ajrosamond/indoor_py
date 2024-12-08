@@ -178,7 +178,6 @@ class ApartmentExplorer(Node):
         side_threshold = 0.3
         escape_threshold = 0.5
 
-        # 1. Prioritize Moving Through an Opening
         if front_lidar_min > forward_threshold:
             self.get_logger().info("Open path ahead. Moving forward.")
             self.cmd.linear.x = LINEAR_VEL
@@ -186,19 +185,16 @@ class ApartmentExplorer(Node):
             self.publisher_.publish(self.cmd)
             return
 
-        # 2. Handle Obstacles Directly Ahead
         if front_lidar_min < SAFE_STOP_DISTANCE:
             self.get_logger().info("Obstacle ahead. Adjusting course.")
             self.cmd.linear.x = 0.0
-            # Bias turn toward the side with more space
             if right_lidar_min > left_lidar_min:
-                self.cmd.angular.z = -0.5  # Turn right
+                self.cmd.angular.z = -0.5
             else:
-                self.cmd.angular.z = 0.5  # Turn left
+                self.cmd.angular.z = 0.5  
             self.publisher_.publish(self.cmd)
             return
 
-        # 3. Wall Following Behavior
         if left_lidar_min < side_threshold and right_lidar_min < side_threshold:
             self.get_logger().info("Walls on both sides. Moving cautiously forward.")
             self.cmd.linear.x = 0.1
@@ -206,13 +202,12 @@ class ApartmentExplorer(Node):
         elif left_lidar_min < side_threshold:
             self.get_logger().info("Following wall on the left.")
             self.cmd.linear.x = 0.1
-            self.cmd.angular.z = -0.3  # Turn slightly right to stay along the wall
+            self.cmd.angular.z = -0.3 
         elif right_lidar_min < side_threshold:
             self.get_logger().info("Following wall on the right.")
             self.cmd.linear.x = 0.1
-            self.cmd.angular.z = 0.3  # Turn slightly left to stay along the wall
+            self.cmd.angular.z = 0.3  
         else:
-            # 4. Exploration in Open Space
             self.get_logger().info("Open space. Exploring randomly.")
             self.cmd.linear.x = 0.15
             self.cmd.angular.z = random.choice([0.2, -0.2])
